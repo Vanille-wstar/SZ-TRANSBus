@@ -1,0 +1,64 @@
+{
+  "pages":[
+    "pages/start/start",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/pay/index",
+    "pages/history/history",
+    "pages/collect/collect",
+    "pages/usercenter/usercenter",
+    "pages/stationList/stationList",
+    "pages/map/map",
+    "pages/personinfo/personinfo",
+    "pages/wallet/wallet",
+    "pages/historyrecord/historyrecord",
+    "pages/set/set",
+    "pages/regist/regist",
+    "pages/login/login",
+    "pages/about_us/about_us",
+    "pages/feedback/feedback",
+    "pages/language/language",
+    "pages/remind/remind",
+    "pages/update/update",
+    "pages/recharge/recharge",
+    "pages/withdraw/withdraw",
+    "pages/cardedit/cardedit",
+    "pages/details/details",
+    "pages/reserve/reserve",
+    "pages/reserve/reserveinfo"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar" :{
+    "color":"black",
+    "selectedColor":"#56abe4",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"images/搜索.png",
+      "selectedIconPath":"images/搜索.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "路线",
+      "iconPath": "images/线路.png",
+      "selectedIconPath": "images/线路.png"
+    },{
+      "pagePath": "pages/history/history",
+      "text": "历史",
+      "iconPath": "images/收藏.png",
+      "selectedIconPath": "images/收藏.png"
+    },{
+      "pagePath": "pages/usercenter/usercenter",
+      "text": "我的",
+      "iconPath": "images/我的.png",
+      "selectedIconPath": "images/我的.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

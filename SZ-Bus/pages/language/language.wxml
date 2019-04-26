@@ -1,0 +1,7 @@
+<!-- <text>请选择语言：</text> -->
+<radio-group>
+  <view>中文<radio checked='true'></radio></view>
+  <view>English<radio></radio></view>
+</radio-group>
+
+<button>确认</button>

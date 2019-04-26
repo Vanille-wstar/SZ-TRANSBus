@@ -1,0 +1,13 @@
+.remind{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 20rpx;
+  margin-right: 20rpx; */
+  margin: 20rpx
+}
+
+.divline{
+  background: rgb(236, 234, 234);
+  height: 5rpx;
+}

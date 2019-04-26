@@ -1,0 +1,105 @@
+.user_head {
+
+    position: relative;
+
+    background: #fff;
+
+    padding: 20px 0;
+
+    font-size: 14px;
+
+    color: #ffffff;
+
+    background:#3B3B3B;
+}
+.user_img {
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: #fff;
+
+}
+
+ 
+
+.userinfo_name {
+
+    clear: both;
+
+    width: 100%;
+
+    padding-top: 10px;
+
+    color:#ffffff;
+
+    font-size:20px
+
+}
+
+ 
+
+.userinfo-avatar {
+
+    font-size:30px;
+
+    font-weight: bolder;
+
+    text-align: center;
+
+}
+.main {
+  padding: 20px;
+  width: 100%;
+}
+
+text {
+  font-size: 22px;
+  color: gray;
+  display: block;
+  margin: 20px auto;
+   margin-left: 105px;
+}
+
+.itemBox {
+  margin: 30px;
+  flex-flow: wrap;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itemBox view {
+  width: 40%;
+  box-sizing: border-box;
+  height: 50px;
+  margin-left: 95px;
+}
+
+.itemBox view>div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border-collapse: collapse;
+  background: rgb(248, 248, 248);
+  border: 2px solid white;
+  color: gray;
+  font-size: 17px;
+  
+}
+
+.itemBox view.active>div {
+  background: #ddf0ff;
+  border: 2px solid #5cbcfe;
+  color: #2c98ef;
+}
+
+.thisbtn {
+  margin-bottom: 2px;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(212, 124, 201, 0.267);
+}

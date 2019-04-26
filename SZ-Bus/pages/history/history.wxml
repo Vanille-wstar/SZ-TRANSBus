@@ -1,0 +1,97 @@
+<view class="page"> 
+ <!--顶部导航栏--> 
+  <view class="swiper-tab"> 
+    <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">历史线路</view>
+    <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">收藏线路</view>
+  </view>  
+ <!--内容主体--> 
+  <swiper class="swiper" current="{{currentTab}}"duration="200" bindchange="swiperChange">
+    <swiper-item> 
+      <scroll-view
+        scroll-y
+        style="height: 1030rpx;"
+      >
+        <view wx:for="{{history}}">
+          <view class="disp-item1" wx:if="{{index%2}}">
+            <view 
+              class="left" 
+              catchtap='getDateRecord' 
+              data-value="{{item.value}}" 
+              data-recordList="{{item.recordList}}" 
+              data-index='{{index}}'>
+              {{item.value}}
+            </view>
+            <image 
+              wx:key="index"
+              src="{{item.imgurl}}" 
+              style="width:50rpx;height:50rpx;" 
+              data-value="{{item.value}}"
+              data-sced="{{item.sced}}"
+              data-selected-id="{{index}}"
+              bindtap="collect_click" >
+            </image>
+          </view>
+          <view class="disp-item2" wx:else>
+            <view 
+              class="left" 
+              catchtap='getDateRecord' 
+              data-value="{{item.value}}" 
+              data-recordList="{{item.recordList}}" 
+              data-index='{{index}}'>
+             {{item.value}}
+            </view>
+            <image 
+              wx:key="index"
+              src="{{item.imgurl}}" 
+              style="width:50rpx;height:50rpx;"              
+              data-value="{{item.value}}"
+              data-sced="{{item.sced}}"
+              data-selected-id="{{index}}"
+              bindtap="collect_click" >
+            </image>
+          </view>
+          <view class='other_box' wx:if='{{item.show}}'>
+            <view class='other'wx:for='{{item.recordList}}'wx:for-item='recordListitem'>
+              <view class='record'>{{recordListitem[0]}}路-></view>
+              <view class='record'>价格：{{recordListitem[1]}}元 </view>              
+              <view class='record'>时间：{{recordListitem[2]}}-{{recordListitem[3]}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item> 
+
+    <swiper-item> 
+      <scroll-view
+        scroll-y
+        style="height: 1030rpx;"
+      >
+        <view wx:for="{{collect}}">
+          <view class="disp-item1" wx:if="{{index%2}}">
+          <view class="left">{{item.value}}</view>
+            <image 
+              wx:key="index"
+              src="{{item.imgurl}}" 
+              style="width:50rpx;height:50rpx;"
+              data-value="{{item.value}}"
+              data-selected-id="{{index}}"
+              bindtap="cancel_collect" >
+            </image>
+          </view>
+          <view class="disp-item2" wx:else>
+          <view class="left">{{item.value}}</view>
+            <image 
+              wx:key="index"
+              src="{{item.imgurl}}" 
+              style="width:50rpx;height:50rpx;"
+              data-value="{{item.value}}"
+              data-selected-id="{{index}}"
+              bindtap="cancel_collect" >
+            </image>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item> 
+  </swiper>
+</view>
+

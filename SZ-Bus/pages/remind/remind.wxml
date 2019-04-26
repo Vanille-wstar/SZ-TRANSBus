@@ -1,0 +1,6 @@
+<!--pages/setting/remind/remind.wxml-->
+<view class='divline'></view>
+<view class='remind'>
+  <text>允许通知</text><switch bindchange='set'/>
+</view>
+<view class='divline'></view>

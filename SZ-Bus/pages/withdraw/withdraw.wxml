@@ -1,0 +1,22 @@
+<view class="user_head">
+
+  <view class="user_img domain">
+
+    <view class="userinfo-avatar">账户余额</view>
+
+    <view class="userinfo_name">￥20.00</view>
+
+  </view>
+
+</view>
+<view class='main'>
+  <text>选择提现金额</text>
+  <view class='flex between itemBox'>
+    <view class="{{activeIndex == index ? 'active':''}}" wx:for="{{numArray}}" bindtap='activethis' data-thisindex='{{index}}'>
+      <div>{{item}}元</div>
+    </view>
+  </view>
+</view>
+<view>
+  <button class='thisbtn' bindtap="popup">立即提现</button>
+</view>
